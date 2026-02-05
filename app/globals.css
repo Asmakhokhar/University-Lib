@@ -17,7 +17,7 @@
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
 
-   --primary: 36 53% 78%;
+  --primary: 36 53% 78%;
   --primary-foreground: 222.2 47.4% 11.2%;
 
   --secondary: 210 40% 96.1%;
@@ -36,12 +36,42 @@
   --foreground: 210 40% 98%;
 }
 
-
-  /* Root */
-  .root-container {
+/* Root */
+.root-container {
   @apply flex min-h-screen flex-1 flex-col bg-pattern bg-cover bg-top bg-background px-5 xs:px-10 md:px-16;
 }
 
+/* Book Overview */
+.book-overview {
+  @apply flex flex-col-reverse items-center gap-12 sm:gap-32 xl:flex-row xl:gap-8;
+}
+
+.book-overview h1 {
+  @apply text-5xl font-semibold text-white md:text-7xl;
+}
+.book-info {
+  @apply mt-7 flex flex-row flex-wrap gap-4 text-xl text-light-100;
+}
+
+.book-copies {
+  @apply flex flex-row flex-wrap gap-4 mt-1;
+}
+
+.book-copies p {
+  @apply text-xl text-light-100;
+}
+
+.book-copies p span {
+  @apply ml-2 font-semibold text-primary;
+}
+
+.book-description {
+  @apply mt-2 text-justify text-xl text-light-100;
+}
+
+.book-overview_btn {
+  @apply mt-4 min-h-14 w-fit bg-primary text-dark-100 hover:bg-primary/90 max-md:w-full !important;
+}
 
 @layer base {
   * {

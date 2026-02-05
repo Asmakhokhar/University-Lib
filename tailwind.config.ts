@@ -16,12 +16,56 @@ export default {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        dark: {
-          100: "hsl(var(--background))",
+         card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
         },
-
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+         green: {
+          DEFAULT: "#027A48",
+          100: "#ECFDF3",
+          400: "#4C7B62",
+          500: "#2CC171",
+          800: "#027A48",
+        },
+        red: {
+          DEFAULT: "#EF3A4B",
+          400: "#F46F70",
+          500: "#E27233",
+          800: "#EF3A4B",
+        },
+        blue: {
+          100: "#0089F1",
+        },
+         light: {
+          100: "#D6E0FF",
+          200: "#EED1AC",
+          300: "#F8F8FF",
+          400: "#EDF1F1",
+          500: "#8D8D8D",
+          600: "#F9FAFB",
+          700: "#E2E8F0",
+          800: "#F8FAFC",
+        },
+         dark: {
+          100: "#16191E",
+          200: "#3A354E",
+          300: "#232839",
+          400: "#1E293B",
+          500: "#0F172A",
+          600: "#333C5C",
+          700: "#464F6F",
+          800: "#1E2230",
+        },
+        gray: {
+          100: "#CBD5E1",
+        },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#E7C9A5",
+          admin: "#25388C",
           foreground: "hsl(var(--primary-foreground))",
         },
 
@@ -29,12 +73,20 @@ export default {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
 
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
-
+        
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
